@@ -30,6 +30,7 @@ body {
 	flex-direction : row;
 	justify-content: center;
 	align-items : center;
+	flex-wrap: wrap;
 
 }
 
@@ -37,11 +38,11 @@ body {
 .container {
 	overflow: hidden;
 	display : inline-block;
-	width : 370px;
+	min-width : 370px;
 	height : 580px;
 	background-color: white;
 	box-shadow: 0px 3px 20px rgba(0,0,0,0.2);
-	margin : auto 30px;
+	margin : 30px 30px;
 }
 
 .head-section {
