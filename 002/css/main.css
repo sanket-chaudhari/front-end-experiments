@@ -75,9 +75,11 @@ body {
 	margin-bottom : 25px;
 }
 
-.right-side-image {	
+
+.right-side-image {
 	width : 300px;
 	overflow: hidden;
+	z-index: 1;
 }
 
 .right-side-image img {
@@ -85,7 +87,10 @@ body {
 	left : -80px;
 	height : 580px;
 	width: auto;
+	z-index : 0;
 }
+
+
 
 .button {
 	height : 50px;
@@ -177,4 +182,33 @@ body {
 	width : 8px;
 	background : url(../assets/blue_arrow_icon.png) center no-repeat;
 }
+
+.button.facebook:hover .button-label {
+	color : white;
+}
+
+.button.facebook:hover {
+	background-color: #435E97;
+	border : 1px solid #435E97;
+}
+
+.button.facebook:hover .button-icon.facebook {
+	background: url(../assets/facebook_white_icon.png) center no-repeat;
+}
+
+.button.google:hover .button-label {
+	color : white;
+}
+
+.button.google:hover {
+	background-color: #DC4E41;
+	border : 1px solid #DC4E41;
+}
+
+.button.google:hover .button-icon.google {
+	background: url(../assets/google_white_icon.png) center no-repeat;
+}
+
+
+
 
