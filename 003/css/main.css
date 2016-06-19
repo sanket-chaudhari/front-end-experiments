@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,300);
+/*@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,300);*/
 
 * {
 	margin : 0px;
@@ -91,15 +91,19 @@ body {
 	height : 650px;
 	overflow : hidden;
 	background : url(../assets/hero.png) center no-repeat;
-	background-size : 100%;
+	background-size : cover;
+	background-position: 0px -100px;
+	
 
 	display: flex;
 	align-items: center;
 }
 
+
 .hero-section-content {
+	position: relative;
 	width : 400px;
-	margin-left : 15%;
+	margin-left : 10%;
 }
 
 .hero-section-content h1 {
@@ -143,3 +147,60 @@ body {
 
 
 
+/* MEDIA QUERIES*/
+
+
+@media screen and (max-width: 1140px){
+
+	.hero-section {
+		height : 540px;
+	}
+
+	.hero-section-content {
+		width: 350px;
+	}
+
+	.hero-section-content h1 {
+	font-size : 36px;
+	}
+
+	.hero-section-content p:first-of-type {
+	font-size : 18px;
+	}
+
+}
+
+@media screen and (max-width: 1000px){
+
+	.header {
+
+	}
+
+	.header .logo-section {
+		
+	}
+
+	button.login-button{
+		display : none;
+	}
+
+	.hero-section-content {
+		margin-left : 50px;
+	}
+
+
+	.hero-section-content h1 {
+	font-size : 32px;
+	}
+
+	.hero-section-content p:first-of-type {
+	font-size : 18px;
+	margin-bottom: 10px;
+	}
+
+	.hero-section {
+		
+	}
+	
+
+}
