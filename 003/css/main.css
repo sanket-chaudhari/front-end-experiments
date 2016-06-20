@@ -88,9 +88,9 @@ body {
 }
 
 .hero-section {
-	height : 650px;
+	min-height : 650px;
 	overflow : hidden;
-	background : url(../assets/hero.png) center no-repeat;
+	background : url(../assets/hero.png) no-repeat 50% 50%;
 	background-size : cover;
 	background-position: 0px -100px;
 	
@@ -146,6 +146,19 @@ body {
 }
 
 
+.menu-hamburger-icon {
+	height : 32px;
+	width: 32px;
+	background : url(../assets/menu-icon.png) no-repeat center center;
+	background-size : 24px auto;
+	display : none;
+
+}
+
+input[type=checkbox] {
+	display : none;
+}
+
 
 /* MEDIA QUERIES*/
 
@@ -153,7 +166,7 @@ body {
 @media screen and (max-width: 1140px){
 
 	.hero-section {
-		height : 540px;
+		min-height : 540px;
 	}
 
 	.hero-section-content {
@@ -161,7 +174,7 @@ body {
 	}
 
 	.hero-section-content h1 {
-	font-size : 36px;
+	font-size : 32px;
 	}
 
 	.hero-section-content p:first-of-type {
@@ -172,20 +185,12 @@ body {
 
 @media screen and (max-width: 1000px){
 
-	.header {
-
-	}
-
-	.header .logo-section {
-		
-	}
-
 	button.login-button{
 		display : none;
 	}
 
 	.hero-section-content {
-		margin-left : 50px;
+		margin-left : 5%;
 	}
 
 
@@ -199,8 +204,59 @@ body {
 	}
 
 	.hero-section {
-		
+		min-height: 480px;
+		background-position : top left;
 	}
+	
+
+}
+
+
+
+@media screen and (max-width: 760px){
+
+	.header {
+
+	}
+
+	.header .logo-section {
+	
+
+	}
+
+	.header .logo-section .logo {
+	height : 40px;
+	width : 40px;
+	}
+
+
+	.header .logo-section h1 {
+		font-size : 24px;
+	}
+
+	.header .right-section {
+
+	}
+
+
+	.hero-section-content {
+		width:260px;
+		margin-left : 24px;
+	}
+
+
+	.hero-section-content h1 {
+
+	}
+
+	.menu-hamburger-icon {
+	display : inline;
+	}
+
+	.right-section > nav {
+		display: none;
+	}
+
 	
 
 }
