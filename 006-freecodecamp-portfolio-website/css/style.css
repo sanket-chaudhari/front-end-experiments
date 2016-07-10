@@ -37,17 +37,57 @@ header {
   align-items : center;
 }
 
+
+/*
 header .logo {
   background-color : #FF4F4F;
   color : white;
   padding : 12px 30px;
 }
+*/
 
-header nav p {
+header nav ul li {
   display : inline-block;
   margin-left : 60px;
   font-size : 12px;
 }
+
+header nav ul li a {
+  text-decoration: none;
+  color : #b5b5b5;
+}
+
+
+
+/* CHANGES */
+
+header .logo {
+  background-color : white;
+  color : #b5b5b5;
+  padding : 12px 30px;
+}
+
+header .logo.active {
+  background-color : #FF4F4F;
+  color : white;
+}
+
+header nav ul li a.active {
+  color : #FF4F4F;
+}
+
+
+header nav ul li a:hover {
+  color : #FF4F4F;
+}
+
+
+/*--------------------*/
+
+
+
+
+
 
 .home {
   margin-top : 90px;
